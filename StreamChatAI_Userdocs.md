@@ -46,6 +46,9 @@ To be able to make use of our service, we will need our bot to have some permiss
 
 To do this, go to our [website](https://streamchatai.com/) and click on the `Login / Register via Twitch` button. This will redirect you to Twitch where you will be asked to authorize our bot to join your channel. ![Imgur](https://imgur.com/Xj5Kst2.png)
 
+> [!IMPORTANT]
+> StreamChatAI will never use your credentials or Twitch-Authentication for purposes other than to provide our service. We will not make any changes other than what the bot's functionality provide **AND** you have set up.
+
 Once you have authorized with Twitch, you will be forwarded back to our website, which now displays your bot's [dashboard](#dashboard). _*you're all set!*_ ... almost.
 
 ### 2.2.1 Custom Bot Name
