@@ -66,3 +66,10 @@ To make the best use of our bot, we need to give it some permissions. These perm
 Log in to your Twitch and go to your [Creator Dashboard](https://dashboard.twitch.tv). In the left hand column, click on `Community` and then on `Roles Manager`. Here you will see a list of all users that have a custom role on your channel. ![Imgur Twitch creator dashboard menu](https://imgur.com/gGIscGF.png)
 On the top-right of the table, you will find the `Add New` button.
 ![Imgur Twitch creator dashboard roles Add New](https://imgur.com/fx56J5Y.png)
+Clicking this will open a new window where you can assign a new user to a role. In the `Search` field, type your bot's name. For convenience purposes, we've used `StreamChatAI`, but obviously you would search for your own bot's name here.
+![Imgur Twitch Add Role](https://i.imgur.com/QQT3YHW.png).
+
+For the best experience, you would set your bot's permissions to `Editor`. This will grant access to all current and future interaction types. If you don't feel comfortable, you can set it to `Moderator` instead. This will still allow for most of the features. Do be aware though, that some features displayed on the [dashboard](#dashboard) will not be able to run properly.
+
+Having set the bot's roles, you are done with the permissions and you can close the window.
+For in-depth information on what roles and permissions are available, pleare refer to [Twitch Help: Roles](https://help.twitch.tv/s/article/Managing-Roles-for-your-Channel?language=en_US).
