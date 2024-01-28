@@ -78,7 +78,7 @@ Clicking this will open a new window where you can assign a new user to a role. 
 
 For the best experience, you would set your bot's permissions to `Editor`. This will grant access to all current and future interaction types. If you don't feel comfortable, you can set it to `Moderator` instead. This will still allow for most of the features. Do be aware though, that some features displayed on the [dashboard](#dashboard) will not be able to run properly.
 
-> !
+> [!NOTE] You can always change your bot's permissions any time through Twitch's `Roles Manager`.
 
 Having set the bot's roles, you are done with the permissions and you can close the window.
 For in-depth information on what roles and permissions are available, pleare refer to [Twitch Help: Roles](https://help.twitch.tv/s/article/Managing-Roles-for-your-Channel?language=en_US).
