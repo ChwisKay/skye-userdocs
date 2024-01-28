@@ -78,7 +78,8 @@ Clicking this will open a new window where you can assign a new user to a role. 
 
 For the best experience, you would set your bot's permissions to `Editor`. This will grant access to all current and future interaction types. If you don't feel comfortable, you can set it to `Moderator` instead. This will still allow for most of the features. Do be aware though, that some features displayed on the [dashboard](#dashboard) will not be able to run properly.
 
-> [!NOTE] You can always change your bot's permissions any time through Twitch's `Roles Manager`.
+> [!NOTE]
+> You can always change your bot's permissions any time through Twitch's `Roles Manager`.
 
 Having set the bot's roles, you are done with the permissions and you can close the window.
 For in-depth information on what roles and permissions are available, pleare refer to [Twitch Help: Roles](https://help.twitch.tv/s/article/Managing-Roles-for-your-Channel?language=en_US).
@@ -112,9 +113,12 @@ Following up on the `User Settings`, we have reached the `Bot Settings`. This is
 - `Boot on Stream Startup` (toggle on/off)
   To manage resources, the bot cannot be running 24/7. Luckily, Twitch provides us with a nice hook to start the bot whenever you go live and having this setting enabled will automatically start your bot whenever you do so. Your bot might take a couple of minutes to start up, so provide a little grace period before you start interacting with it. If you have `Welcome message` enabled in the [Contexts](#3.10-contexts), your bot will send that message to your chat as soon as it's done starting up. It is **highly recommended** to keep this setting enabled. If you do not want your bot to start automatically, you can keep this setting disabled.
 
-  > [!WARNING] If you disable this function, you will have to [Manual Start](#5.1-manual-start) our bot whenever you want to. When our API cannot pick up on your channel being live, it will automatically shut down after `5 minutes`.
+> [!WARNING]
+> If you disable this function, you will have to [Manual Start](#5.1-manual-start) our bot whenever you want to. When our API cannot pick up on your channel being live, it will automatically shut down after `5 minutes`.
 
 - `Enable replies` (toggle on/off)
   With replies enabled, your bot will be able to respond to messages in chat. These can be [Commands](#3.02-commands), [Nicknames](#3.2.2-bot-settings) or random messages in your chat.
   This is a core feature of our bot, so it's **highly recommended** to keep this setting enabled. If you do not want your bot to respond to messages in chat, you can keep this setting disabled.
-  > [!WARNING] Disabling this setting will block all chat interactions. This means that [Commands](#3.02-commands), [Nicknames](#3.2.2-bot-settings) and any other chat messages will be ignored. Other features like [Reactions](#3.03-reactions), [Rewards](#3.04-rewards), [Recurring Messages](#3.05-recurring-messages) and [Multimedia](#3.06-multimedia) will still work, as long as they do not require chat input.
+
+> [!WARNING]
+> Disabling this setting will block all chat interactions. This means that [Commands](#3.02-commands), [Nicknames](#3.2.2-bot-settings) and any other chat messages will be ignored. Other features like [Reactions](#3.03-reactions), [Rewards](#3.04-rewards), [Recurring Messages](#3.05-recurring-messages) and [Multimedia](#3.06-multimedia) will still work, as long as they do not require chat input.
