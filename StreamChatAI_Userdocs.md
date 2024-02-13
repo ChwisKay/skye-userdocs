@@ -150,8 +150,8 @@ Following up on the `User Settings`, we have reached the `Bot Settings`. This is
 - `Random Auto Reply` (percentage field)
   This setting allows you to set the chance of your bot replying to a message in chat. The percentage goes from `0` to `100`. If you do not want your bot to reply to messages in chat, you can set this to `0`.
 
-  > [!WARNING]
-  > Setting this value higher than 0 will make your bot randomly reply to messages in chat. This can be extremely funny, but also extremely annoying. Try to find a balance that fits with your preferences and audiences. Best practice is to keep this setting low and granually increase it to find the sweet spot. If you do not want your bot to reply to messages in chat, you can set this to `0`.
+> [!WARNING]
+> Setting this value higher than 0 will make your bot randomly reply to messages in chat. This can be extremely funny, but also extremely annoying. Try to find a balance that fits with your preferences and audiences. Best practice is to keep this setting low and granually increase it to find the sweet spot. If you do not want your bot to reply to messages in chat, you can set this to `0`.
 
 - `Response Delay` (sliders)
   These sliders deterimine the `Minimum Delay` and `Maximum Delay` between responses in `seconds`. This is a feature implemented to make the bot feel more human. The bot will respond at a random time picked between the `Minimum Delay` and `Maximum Delay`. If you don't want to delay the bot's responses, you can leave both sliders at `0`.
