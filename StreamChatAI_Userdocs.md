@@ -78,11 +78,11 @@ Clicking this will open a new window where you can assign a new user to a role. 
 
 For the best experience, you would set your bot's permissions to `Editor`. This will grant access to all current and future interaction types. If you don't feel comfortable, you can set it to `Moderator` instead. This will still allow for most of the features. Do be aware though, that some features displayed on the [dashboard](#dashboard) will not be able to run properly.
 
-> [!NOTE]
-> You can always change your bot's permissions any time through Twitch's `Roles Manager`.
-
 Having set the bot's roles, you are done with the permissions and you can close the window.
 For in-depth information on what roles and permissions are available, pleare refer to [Twitch Help: Roles](https://help.twitch.tv/s/article/Managing-Roles-for-your-Channel?language=en_US).
+
+> [!NOTE]
+> You can always change your bot's permissions any time through Twitch's `Roles Manager`.
 
 ---
 
@@ -121,4 +121,40 @@ Following up on the `User Settings`, we have reached the `Bot Settings`. This is
   This is a core feature of our bot, so it's **highly recommended** to keep this setting enabled. If you do not want your bot to respond to messages in chat, you can keep this setting disabled.
 
 > [!WARNING]
-> Disabling this setting will block all chat interactions. This means that [Commands](#3.02-commands), [Nicknames](#3.2.2-bot-settings) and any other chat messages will be ignored. Other features like [Reactions](#3.03-reactions), [Rewards](#3.04-rewards), [Recurring Messages](#3.05-recurring-messages) and [Multimedia](#3.06-multimedia) will still work, as long as they do not require chat input.
+> Disabling this setting will block all chat interactions. This means that [Nicknames](#3.2.2-bot-settings) and any other chat messages will be ignored. Other features like [Commands](#3.02-commands), [Reactions](#3.03-reactions), [Rewards](#3.04-rewards), [Recurring Messages](#3.05-recurring-messages) and [Multimedia](#3.06-multimedia) will still work.
+
+- `Smart Conversation Reply` (toggle on/off) **BETA RUBY V2 ONLY**
+  This is one of the more advanced features of our bot. When enabled, your bot will attempt to have an actual conversation after being addressed in chat. It will try to understand the context of the initiator's response and try to deduct from that
+
+- `Nicknames` (text field)
+  In this field, you can provide additional nicknames for your bot to respond to. This is a great way to personalize your bot and make it feel more like a part of your community. You can add as many nicknames as you like, separated by a comma. For example: `MyAiBot,MyBot,MyAi,MyBotName`. If you do not want your bot to respond to nicknames, you can leave this field empty.
+
+- `Who should the bot reply to?` (dropdown)
+  This setting allows you to specify who the bot should reply to. The options are `Everyone`, `Subscribers`, `VIPs`, `Moderators`, `Editors`, `Broadcaster`. These settings are hierarchical, meaning that if you select `Subscribers`, the bot will also reply to `VIPs`, `Moderators` and `Broadcaster`. If you do not want your bot to reply to anyone, you can select `Broadcaster`, which will only allow the bot to reply to you.
+
+- `Your bot will refer to you as` (text field)
+  In this field, you can provide a name that your bot will use to refer to you. This is a great way to personalize your bot and make it feel more like a part of your community. If you do not want your bot to refer to you, in a predermined manner, you can leave this field empty.
+
+- `A.I Messages Limit per Stream` (number field)
+  This setting allows you to limit the amount of AI responses per stream. This is ideal if you have a big audience and want to prevent your tokens to run out. If you do not want to limit the amount of AI responses, you can leave this field empty.
+
+- `Blacklist` (text field)
+  Here you can define a list of users that your bot will ignore. This is a great way to prevent unwanted behavior from certain users. You can add as many usernames as you like, separated by a comma. For example: `User1,User2,User3`. If you do not want to blacklist any users, you can leave this field empty.
+
+- `Banned words/phrases` (text field)
+  Here you can define a list of words or phrases that your bot will ignore. This is a great way to prevent unwanted behavior from certain users. You can add as many words or phrases as you like, separated by a comma. For example: `word1,word2,word3`. If you do not want to ban any words or phrases, you can leave this field empty.
+
+- `Bot Attitude` (slider)
+  This slider allows you to modify your bot's "randomness". The slider goes from `focussed` to `random`. The more focussed your bot is, the more it will try to stay on topic. The more random your bot is, the more it will try to be funny and random. If you do not want to change your bot's attitude, you can leave this setting as is.
+
+- `Random Auto Reply` (percentage field)
+  This setting allows you to set the chance of your bot replying to a message in chat. The percentage goes from `0` to `100`. If you do not want your bot to reply to messages in chat, you can set this to `0`.
+
+  > [!WARNING]
+  > Setting this value higher than 0 will make your bot randomly reply to messages in chat. This can be extremely funny, but also extremely annoying.
+  > Try to find a balance that fits with your preferences and audiences.
+  > Best practice is to keep this setting low and granually increase it to find the sweet spot.
+  > If you do not want your bot to reply to messages in chat, you can set this to `0`.
+
+- `Response Delay` (sliders)
+  These sliders deterimine the `Minimum Delay` and `Maximum Delay` between responses in `seconds`. This is a feature implemented to make the bot feel more human. The bot will respond at a random time picked between the `Minimum Delay` and `Maximum Delay`. If you don't want to delay the bot's responses, you can leave both sliders at `0`.
